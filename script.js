@@ -34,8 +34,14 @@ sBtn.addEventListener("click", () => {
         .then(res => res.json()
             .then(res => {
                 result = res.results
-                displayResult()
+                if (result.length == 0) {
+                    alert("No match found")
+                } else {
+                    displayResult()
+                    inp.value = ""
+                }
+
+
             }))
 
 })
-                      
