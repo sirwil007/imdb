@@ -5,22 +5,28 @@
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgb(197, 224, 208);
     font-size: 16px;
     padding: 20px;
     text-align: center;
 }
-.copy-holder{
-   text-align: center;
-}
+
 .search {
-    background-color: aqua;
+    background-color: rgb(5, 61, 61);
     display: flex;
     flex-direction: column;
     width: 70%;
     justify-content: space-around;
     height: 100px;
     margin: 0 auto;
+}
+.footerb{
+    background-color: rgb(20, 121, 209);
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    justify-self: flex-end;
+    align-items: center;
 }
 
 .search input {
@@ -31,14 +37,29 @@ header {
     border: none;
 }
 
+.search input:focus {
+    background-color: rgb(255, 239, 239);
+    border: black 1px solid;
+}
+
 .search button {
-    width: 40%;
+    width: 30%;
     margin: 0 auto;
+    padding: 5px 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.search button:hover {
+    background-color: rgb(77, 78, 78);
+    outline: None;
+    border: black 1px solid;
+    color: white;
 }
 
 .result {
     height: 500px;
-    background-color: blanchedalmond;
+    background-color: rgb(222, 247, 216);
     overflow-y: scroll;
     width: 80%;
     margin: 0 auto;
